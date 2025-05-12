@@ -194,6 +194,11 @@
             </div>
         </div>
         <script>
+            // Pick a random game on load
+            window.onload = function () {
+                const randomGame = gameList[Math.floor(Math.random() * gameList.length)];
+                loadGame(randomGame);
+            };
             function scrollToSection(targetSectionToScroll) {
                 const offset = 80;
                 const targetPosition = document.getElementById(targetSectionToScroll).getBoundingClientRect().top + window.pageYOffset - offset;
@@ -222,6 +227,36 @@
                     alert("Fullscreen not supported in this browser.");
                 }
             }
+            // List of game URLs
+            const gameList = [
+                "Games/leveldevil.html",
+                "Games/1v1lol.html",
+                "Games/ragdollhit.html",
+                "Games/subwaysurfers.html",
+                "Games/buildnowgg.html",
+                "Games/eaglercraft.html",
+                "Games/tag.html",
+                "Games/tag2.html",
+                "Games/slicemaster.html",
+                "Games/rooftopsnipers.html",
+                "Games/crazycattle.html",
+                "Games/pinkbike.html",
+                "Games/drivemad.html",
+                "Games/superhot.html",
+                "Games/dinobros.html",
+                "Games/paperio2.html",
+                "Games/snowballio.html",
+                "Games/crossyroad.html",
+                "Games/geometrydashlite.html",
+                "Games/superliquidsoccer.html",
+                "Games/driftboss.html",
+                "Games/airportclash.html",
+                "Games/winterclash.html",
+                "Games/vortellispizzadelivery.html",
+                "Games/bloxdio.html",
+                "https://itsvijaysingh.github.io/Snow-Rider3D/",
+                "https://ozh.github.io/cookieclicker/"
+            ];
         </script>
     </body>
 </html>
