@@ -37,7 +37,7 @@
         </div>
         <div class="content">
             <h1 style="text-align: center;">Play Games Online For Free On it54!</h1>
-            <iframe src="loadRandomGame" id="game-frame" class="game-iframe"></iframe>
+            <iframe id="game-frame" class="game-iframe"></iframe>
             <button onclick="goFullscreen()">Fullscreen</button>
             <div class="games-list">
                 <div id="Popular">
@@ -207,7 +207,7 @@
             // Pick a random game on load
             function loadRandomGame() {
                 const randomGame = gameList[Math.floor(Math.random() * gameList.length)];
-                return randomGame;
+                document.getElementById("game-frame").src = randomGame;
             };
             function scrollToSection(targetSectionToScroll) {
                 const offset = 80;
