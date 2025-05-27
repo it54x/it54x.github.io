@@ -120,3 +120,33 @@ button:focus {
     border-radius: 5px;
     text-shadow: 0 0 6px #ffffff;
 }
+
+a.game-button {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ff2e63;
+    color: #ffffff;
+    border: 2px solid #00b7ff;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 0 8px #ff2e63;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+a.game-button:hover {
+    background-color: #00b7ff;
+    color: #1e1e2f;
+    box-shadow: 0 0 12px #00b7ff;
+    transform: scale(1.05);
+}
+
+a.game-button:focus {
+    outline: none;
+    box-shadow: 0 0 16px #00b7ff;
+}
+
